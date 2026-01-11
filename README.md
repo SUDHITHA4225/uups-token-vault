@@ -92,6 +92,40 @@ The proxy address remains the same across all upgrades.
 - Role-based access control for upgrades and pausing
 - Storage layout preserved across all versions
 
+---
+
+### Contract Versions Overview
+🔹 TokenVaultV1
+- Token deposits & withdrawals
+- Deposit fee (basis points)
+- Balance tracking
+- Reinitialization protection
+
+🔹 TokenVaultV2
+- Yield rate configuration
+- Linear yield accrual
+- Yield claiming
+- Deposit pause/unpause
+- Backward compatible with V1
+
+🔹 TokenVaultV3
+- Withdrawal request + delay
+- Time-locked withdrawal execution
+- Emergency withdrawal
+- Full preservation of V2 state
+
+---
+
+### submission.yml
+
+The repository includes a mandatory submission.yml file defining:
+- Dependency installation
+- Compilation command
+- Test execution command
+- This enables automated evaluation without manual configuration.
+
+---
+
 ## Summary
 This project demonstrates a secure, upgradeable smart contract architecture with real-world upgrade scenarios.
 It is designed to meet production and audit-level standards for upgradeable protocols.
